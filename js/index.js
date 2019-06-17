@@ -128,7 +128,7 @@ let vpCont = lCont[2].querySelector("p");
 vCont.textContent = siteContent["main-content"]["vision-h4"];
 vpCont.textContent = siteContent["main-content"]["vision-content"];
 
-/* Setting up the Contact Section  */
+/* Setting up the Contact-information Section  */
 let cCont = document.querySelectorAll(".contact");
 
 let cTxt = cCont[0].querySelector("h4");
@@ -138,4 +138,12 @@ cTxt.textContent = siteContent["contact"]["contact-h4"];
 cpTxt[0].textContent = siteContent["contact"]["address"];
 cpTxt[1].textContent = siteContent["contact"]["phone"];
 cpTxt[2].textContent = siteContent["contact"]["email"];
-/* END OF CONTACT */
+
+/* Setting up the Footer */
+
+let ftCont = document.querySelector("footer");
+
+let fppCont = ftCont.querySelector("p");
+
+fppCont.innerHTML = siteContent["footer"]["copyright"];
+//FooterSel.innerHTML = siteContent["footer"]["copyright"];

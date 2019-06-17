@@ -146,4 +146,3 @@ let ftCont = document.querySelector("footer");
 let fppCont = ftCont.querySelector("p");
 
 fppCont.innerHTML = siteContent["footer"]["copyright"];
-//FooterSel.innerHTML = siteContent["footer"]["copyright"];

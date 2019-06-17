@@ -80,9 +80,26 @@ let ctaTxt = document.getElementsByTagName("h1");
 // CTA button
 let ctaBtn = document.getElementsByTagName("button");
 
-/* Task 3: Update HTML with JSON data */
-// Get the Nav bar text-menu on the page
+/* Task 3*/
+//  Nav bar text
 for (let i = 1; i < 7; i++) {
   anchoT[i - 1].innerHTML = siteContent["nav"]["nav-item-" + i];
   console.log(anchoT[i - 1]);
 }
+
+//CTA
+
+ctaTxt[0].textContent = siteContent["cta"]["h1"];
+console.log(ctaTxt);
+// Button
+ctaBtn[0].textContent = siteContent["cta"]["button"];
+console.log(ctaBtn);
+
+//Setting up the Main-Content
+let mCont = document.querySelectorAll(".top-content .text-content ");
+
+// Setting up the Feature Content
+let tCont = mCont[0].querySelector("h4");
+let pCont = mCont[0].querySelector("p");
+tCont.textContent = siteContent["main-content"]["features-h4"];
+pCont.textContent = siteContent["main-content"]["features-content"];

@@ -127,3 +127,15 @@ let vCont = lCont[2].querySelector("h4");
 let vpCont = lCont[2].querySelector("p");
 vCont.textContent = siteContent["main-content"]["vision-h4"];
 vpCont.textContent = siteContent["main-content"]["vision-content"];
+
+/* Setting up the Contact Section  */
+let cCont = document.querySelectorAll(".contact");
+
+let cTxt = cCont[0].querySelector("h4");
+let cpTxt = cCont[0].querySelectorAll("p");
+
+cTxt.textContent = siteContent["contact"]["contact-h4"];
+cpTxt[0].textContent = siteContent["contact"]["address"];
+cpTxt[1].textContent = siteContent["contact"]["phone"];
+cpTxt[2].textContent = siteContent["contact"]["email"];
+/* END OF CONTACT */

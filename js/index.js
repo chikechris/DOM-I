@@ -81,9 +81,10 @@ let ctaTxt = document.getElementsByTagName("h1");
 let ctaBtn = document.getElementsByTagName("button");
 
 /* Task 3*/
-//  Nav bar text
+//  Setting up the Navigation Bar
+
 for (let i = 1; i < 7; i++) {
-  anchoT[i - 1].innerHTML = siteContent["nav"]["nav-item-" + i];
+  anchoT[i - 1].textContent = siteContent["nav"]["nav-item-" + i];
   console.log(anchoT[i - 1]);
 }
 
@@ -146,3 +147,30 @@ let ftCont = document.querySelector("footer");
 let fppCont = ftCont.querySelector("p");
 
 fppCont.innerHTML = siteContent["footer"]["copyright"];
+
+// Task 4
+
+// Change Navigation Color to green
+
+//for (let i = 0; i < 8; i++) {
+// console.log((anchoT[i].style.color = "green"));
+//}
+
+let navTag = document.querySelector("nav");
+
+// appendChild();
+let appendTxt = document.createElement("a");
+appendTxt.textContent = "Questions";
+
+navTag.appendChild(appendTxt);
+
+// insertBefore();
+let prependTxt = document.createElement("a");
+prependTxt.textContent = "Information";
+
+navTag.prepend(prependTxt);
+
+//Change Navigation color to green
+
+const links = Array.from(document.querySelectorAll("header nav a"));
+const alinks = links.forEach(element => (element.style.color = "green"));

@@ -79,3 +79,10 @@ let ctaTxt = document.getElementsByTagName("h1");
 
 // CTA button
 let ctaBtn = document.getElementsByTagName("button");
+
+/* Task 3: Update HTML with JSON data */
+// Get the Nav bar text-menu on the page
+for (let i = 1; i < 7; i++) {
+  anchoT[i - 1].innerHTML = siteContent["nav"]["nav-item-" + i];
+  console.log(anchoT[i - 1]);
+}

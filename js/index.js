@@ -53,3 +53,29 @@ let midImg = document.getElementById("middle-img");
 midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
 
 /* Task 2*/
+
+// Container
+let contn = document.getElementsByClassName("container");
+console.log(contn);
+
+// Navigation
+let nav = document.getElementsByTagName("nav");
+console.log(nav);
+
+// Anchor tags for the Nav
+let anchoT = document.getElementsByTagName("a");
+console.log(anchoT);
+
+// Main Content
+let mContent = document.getElementsByClassName("main-content");
+console.log(mContent);
+
+// Contact Info
+let contInfor = document.getElementsByClassName("contact");
+console.log(contInfor);
+
+// CTA h1
+let ctaTxt = document.getElementsByTagName("h1");
+
+// CTA button
+let ctaBtn = document.getElementsByTagName("button");

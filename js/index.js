@@ -99,7 +99,31 @@ console.log(ctaBtn);
 let mCont = document.querySelectorAll(".top-content .text-content ");
 
 // Setting up the Feature Content
-let tCont = mCont[0].querySelector("h4");
-let pCont = mCont[0].querySelector("p");
-tCont.textContent = siteContent["main-content"]["features-h4"];
-pCont.textContent = siteContent["main-content"]["features-content"];
+let fCont = mCont[0].querySelector("h4");
+let fpCont = mCont[0].querySelector("p");
+fCont.textContent = siteContent["main-content"]["features-h4"];
+fpCont.textContent = siteContent["main-content"]["features-content"];
+
+// Setting up the  About Content
+let aCont = mCont[1].querySelector("h4");
+let apCont = mCont[1].querySelector("p");
+aCont.textContent = siteContent["main-content"]["about-h4"];
+apCont.textContent = siteContent["main-content"]["about-content"];
+
+//* Setting up the LowerContent for Main-Content *//
+let lCont = document.querySelectorAll(".bottom-content .text-content");
+
+let sCont = lCont[0].querySelector("h4");
+let spCont = lCont[0].querySelector("p");
+sCont.textContent = siteContent["main-content"]["services-h4"];
+spCont.textContent = siteContent["main-content"]["services-content"];
+
+let pCont = lCont[1].querySelector("h4");
+let ppCont = lCont[1].querySelector("p");
+pCont.textContent = siteContent["main-content"]["product-h4"];
+ppCont.textContent = siteContent["main-content"]["product-content"];
+
+let vCont = lCont[2].querySelector("h4");
+let vpCont = lCont[2].querySelector("p");
+vCont.textContent = siteContent["main-content"]["vision-h4"];
+vpCont.textContent = siteContent["main-content"]["vision-content"];

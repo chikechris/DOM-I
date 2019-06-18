@@ -63,7 +63,7 @@ let nav = document.getElementsByTagName("nav");
 console.log(nav);
 
 // Anchor tags for the Nav
-let anchoT = document.getElementsByTagName("a");
+let anchoT = document.querySelectorAll("header nav a");
 console.log(anchoT);
 
 // Main Content
@@ -83,10 +83,9 @@ let ctaBtn = document.getElementsByTagName("button");
 /* Task 3*/
 //  Setting up the Navigation Bar
 
-for (let i = 1; i < 7; i++) {
-  anchoT[i - 1].textContent = siteContent["nav"]["nav-item-" + i];
-  console.log(anchoT[i - 1]);
-}
+anchoT.forEach((element, i) => {
+  element.textContent = siteContent["nav"][`nav-item-${i + 1}`];
+});
 
 //CTA
 
@@ -150,27 +149,21 @@ fppCont.innerHTML = siteContent["footer"]["copyright"];
 
 // Task 4
 
-// Change Navigation Color to green
-
-//for (let i = 0; i < 8; i++) {
-// console.log((anchoT[i].style.color = "green"));
-//}
-
 let navTag = document.querySelector("nav");
 
-// appendChild();
+// appendChild()
 let appendTxt = document.createElement("a");
 appendTxt.textContent = "Questions";
 
 navTag.appendChild(appendTxt);
 
-// insertBefore();
+// prependChild()
 let prependTxt = document.createElement("a");
 prependTxt.textContent = "Information";
 
 navTag.prepend(prependTxt);
 
-//Change Navigation color to green
+//Change Navigation text color to green
 
 const links = Array.from(document.querySelectorAll("header nav a"));
 const alinks = links.forEach(element => (element.style.color = "green"));

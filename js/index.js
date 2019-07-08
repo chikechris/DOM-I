@@ -79,6 +79,7 @@ let ctaTxt = document.getElementsByTagName("h1");
 
 // CTA button
 let ctaBtn = document.getElementsByTagName("button");
+//ctaBtn.style.color = "gray";
 
 /* Task 3*/
 //  Setting up the Navigation Bar
@@ -100,12 +101,14 @@ let mCont = document.querySelectorAll(".top-content .text-content ");
 
 // Setting up the Feature Content
 let fCont = mCont[0].querySelector("h4");
+fCont.style.color = "yellow";
 let fpCont = mCont[0].querySelector("p");
 fCont.textContent = siteContent["main-content"]["features-h4"];
 fpCont.textContent = siteContent["main-content"]["features-content"];
 
 // Setting up the  About Content
 let aCont = mCont[1].querySelector("h4");
+aCont.style.color = "blue";
 let apCont = mCont[1].querySelector("p");
 aCont.textContent = siteContent["main-content"]["about-h4"];
 apCont.textContent = siteContent["main-content"]["about-content"];
